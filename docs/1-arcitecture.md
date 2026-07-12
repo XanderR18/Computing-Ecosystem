@@ -7,12 +7,12 @@ Responsible for day-to-day development and work, this is where I interact with t
   - AI Work
   - Documentation
 ### 2. Compute (Small desktop)
-Responsible for executing workloads rather than interacting with them, keeping them running and updated.
+Responsible for executing workloads rather than interacting with them, keeping them running and updated. This layer should be application-agnostic
 - CI/CD
 - Docker
 - Virtual machines
 ### 3. Network (Mini desktop)
-Responsible for managing network tools, traffic/monitoring, security, performance, connection, and the likes. Allows me to connect anyway anytime accessing whatever I need at any point. Serves as the communication between all other layers
+Responsible for managing network tools, traffic/monitoring, security, performance, connection, and the likes. Allows me to connect anyway anytime accessing whatever I need at any point. Responsible for providing connectivity, identity, security, and observability for the computing ecosystem.
 - VPN
 - Network tool
 - Monitoring
@@ -21,11 +21,13 @@ Responsible for storing, maintaining, and backing up my data, files, and more. W
 - Project files
 - Mass storage
 - Shared storage
+- Backups and recovery
 ### 5. Operations (Large Desktop 1)
-Responsible for providing centralized operation center for environment management. Should provide monitoring, logging, debugging, and general system management
+Responsible for providing centralized operation center for environment management. Should provide monitoring, logging, debugging, and general system management. The admin.
 - Environment dashboard
 - Logs, debugging, alerts, and monitoring
 - Documentation
+- Updates, maintainance, automations, orchestration, etc.
 ### 6. Field (Cyberdeck, Flipper 0)
 Responsible for mobile and field operations and projects, as well as hardware tool production. Should still easily integrate with in-place system
 - Cyberdeck
@@ -63,15 +65,15 @@ flowchart TD
 ```
 
 ## Machine Role Table
-| Device Name | Hardware | OS | Role | Power State |
-| :--- | :---: | :---: | :---: | :---: |
-| Laptop | AMD 5, 8 GB RAM, 238 GB | Windows 11 | Current primary device | On-demand |
-| Workspace Desktop | i7, 16 GB RAM, 238 GB | Windows 11 | Main workspace/ecosystem access point | On-demand |
-| Storage Desktop | i7, 16 GB RAM, 500 GB | No OS (Wiped) | Main system storage | On-demand |
-| Computing Desktop | i5, 8 GB RAM, 250 GB | Windows 11 | Machine to execute workloads | 24/7 |
-| Network Desktop | i3, 4 GB RAM, 60 GB | Ubuntu | Machine to manage network and its communication | 24/7 |
-| Cyberdeck | Not yet defined | Not yet defined | Main field operation machine | On-demand |
-| Flipper 0 | See Flipper 0 specs | Flipper OS | Field operations data collection | On-demand |
+| Hostname | Physical Device | Hardware | OS | Role | Power State |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| lap-main | Laptop | AMD 5, 8 GB RAM, 238 GB | Windows 11 | Current primary device | On-demand |
+| ws-main | Workspace Desktop | i7, 16 GB RAM, 238 GB | Windows 11 | Main workspace/ecosystem access point | On-demand |
+| sto-main | Storage Desktop | i7, 16 GB RAM, 500 GB | No OS (Wiped) | Main system storage | On-demand |
+| cmp-main | Computing Desktop | i5, 8 GB RAM, 250 GB | Windows 11 | Machine to execute workloads | 24/7 |
+| net-main | Network Desktop | i3, 4 GB RAM, 60 GB | Ubuntu | Machine to manage network and its communication | 24/7 |
+| mob-main | Cyberdeck | Not yet defined | Not yet defined | Main field operation machine | On-demand |
+| N/A | Flipper 0 | See Flipper 0 specs | Flipper OS | Field operations data collection | On-demand |
 
 ## Service Placement Table - (TODO: Update this table as services are added)
 | Service | Description | Relevant Device(s) | Requirments | Status |
