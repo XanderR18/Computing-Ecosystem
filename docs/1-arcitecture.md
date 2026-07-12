@@ -42,3 +42,51 @@ The main access point will be a TP-Link Wi-Fi extender that recieves its connect
 - Laptop: Used for school, not a crucial component to the system. Can be easily connected and disconnected to the system.
 - Cyberdeck (To come in the future): Mobile computational tool that will be a hardware project and used for in the field data colleciton, projects, and computations.
 - Flipper 0: Mobile networking tool used for data collection.
+
+## Network Topolgy
+```mermaid
+flowchart TD
+    %% Internet Zone
+    Internet((Internet)) === WE1[Wi-Fi Extender]
+
+    WE1 --- SW1((LAN Switch))
+    SW1 --- PC1[Workspace PC]
+    SW1 --- PC2[Storage PC]
+    SW1 --- PC3[Networking PC]
+    SW1 --- PC4[Computing PC]
+    WE1 --- PC5[Laptop]
+
+
+    %% Custom Styling
+    style Internet fill:#0284c7,stroke:#fff,stroke-width:2px,color:#fff
+    style SW1 fill:#22c55e,stroke:#fff,stroke-width:2px,color:#fff
+```
+
+## Machine Role Table
+| Device Name | Hardware | OS | Role | Power State |
+| :--- | :---: | :---: | :---: | :---: |
+| Laptop | AMD 5, 8 GB RAM, 238 GB | Windows 11 | Current primary device | On-demand |
+| Workspace Desktop | i7, 16 GB RAM, 238 GB | Windows 11 | Main workspace/ecosystem access point | On-demand |
+| Storage Desktop | i7, 16 GB RAM, 500 GB | No OS (Wiped) | Main system storage | On-demand |
+| Computing Desktop | i5, 8 GB RAM, 250 GB | Windows 11 | Machine to execute workloads | 24/7 |
+| Network Desktop | i3, 4 GB RAM, 60 GB | Ubuntu | Machine to manage network and its communication | 24/7 |
+| Cyberdeck | Not yet defined | Not yet defined | Main field operation machine | On-demand |
+| Flipper 0 | See Flipper 0 specs | Flipper OS | Field operations data collection | On-demand |
+
+## Service Placement Table - (TODO: Update this table as services are added)
+| Service | Description | Relevant Device(s) | Requirments | Status |
+| :--- | :---: | :---: | :---: | :---: |
+
+## Communication Map
+```mermaid
+flowchart TD
+    WS[Workspace] --- CM[Computing]
+    WS --- ST[Storage]
+    WS --- NW[Network]
+
+    CM --- OP[Operations]
+    ST --- OP[Operations]
+    NW --- OP[Operations]
+
+    WS --- FD[Field]
+```
