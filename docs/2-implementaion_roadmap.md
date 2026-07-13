@@ -7,14 +7,14 @@ Roadmap outlining instructions for buidling, configuring, and implementing the c
 ## 2. Core Infrastructure
   - Connect everything to switch via ethernet cables
   - Configure and test SSH for each device
-  - Git access?
-  - Docker compute node install?
+  - Git access: all machines have git and can pull/clone repos
+  - Compute node Docker install and configuration
   - Test network infrastructure (quick pings to and from each device)
 ## 3. Operations
   - Build simple operations management admin dashboard
   - Centralize logs
   - Add basic health monitoring
-  - Backups?
+  - Monitoring
 ## 4. Services
   - Deploy first self hosted services as Docker containers
   - Integrate network tool
@@ -28,3 +28,4 @@ Roadmap outlining instructions for buidling, configuring, and implementing the c
   - Offline AIs
   - Hardware tool manufacturing
   - Cyberpunk tools/projects
+  - Operations automated backups
