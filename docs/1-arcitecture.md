@@ -65,15 +65,15 @@ flowchart TD
 ```
 
 ## Machine Role Table
-| Hostname | Physical Device | Hardware | OS | Role | Power State |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| lap-main | Laptop | AMD 5, 8 GB RAM, 238 GB | Windows 11 | Current primary device | On-demand |
-| ws-main | Workspace Desktop | i7, 16 GB RAM, 238 GB | Windows 11 | Main workspace/ecosystem access point | On-demand |
-| sto-main | Storage Desktop | i7, 16 GB RAM, 500 GB | No OS (Wiped) | Main system storage | On-demand |
-| cmp-main | Computing Desktop | i5, 8 GB RAM, 250 GB | Windows 11 | Machine to execute workloads | 24/7 |
-| net-main | Network Desktop | i3, 4 GB RAM, 60 GB | Ubuntu | Machine to manage network and its communication | 24/7 |
-| mob-main | Cyberdeck | Not yet defined | Not yet defined | Main field operation machine | On-demand |
-| N/A | Flipper 0 | See Flipper 0 specs | Flipper OS | Field operations data collection | On-demand |
+| IP | Hostname | Physical Device | Hardware | OS | Role | Power State |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+|| lap-main | Laptop | AMD 5, 8 GB RAM, 238 GB | Windows 11 | Current primary device | On-demand |
+|| xander-workspace | Workspace Desktop | i7, 16 GB RAM, 238 GB | Windows 11 | Main workspace/ecosystem access point | On-demand |
+|| storage-main | Storage Desktop | i7, 16 GB RAM, 500 GB | No OS (Wiped) | Main system storage | On-demand |
+|| compute-main | Computing Desktop | i5, 8 GB RAM, 250 GB | Windows 11 | Machine to execute workloads | 24/7 |
+|| network-main | Network Desktop | i3, 4 GB RAM, 60 GB | Ubuntu | Machine to manage network and its communication | 24/7 |
+|| mobile-main | Cyberdeck | Not yet defined | Not yet defined | Main field operation machine | On-demand |
+|| N/A | Flipper 0 | See Flipper 0 specs | Flipper OS | Field operations data collection | On-demand |
 
 ## Service Placement Table - (TODO: Update this table as services are added)
 | Service | Description | Relevant Device(s) | Requirments | Status |
