@@ -72,7 +72,7 @@ flowchart TD
 | 192.168.0.10 | xander-workspace | Workspace Desktop | E0-D5-5E-CF-DC-68 | i7, 16 GB RAM, 238 GB | Windows 11 | Main workspace/ecosystem access point | On-demand |
 | 192.168.0.20 | compute-main | Computing Desktop | 70-54-D2-AB-1B-5D | i5, 8 GB RAM, 250 GB | Windows 11 | Machine to execute workloads | 24/7 |
 | 192.168.0.30 | network-main | Network Desktop | 94-C6-91-A2-A4-61 | i3, 4 GB RAM, 60 GB | Ubuntu | Machine to manage network and its communication | 24/7 |
-| 192.168.0.40 | storage-main | Storage Desktop | B4-2E-99-3B-4A-B3 | i7, 16 GB RAM, 500 GB | No OS (Wiped) | Main system storage | On-demand |
+| 192.168.0.40 | storage-main | Storage Desktop | B4-2E-99-3B-4A-B3 | i7, 16 GB RAM, 500 GB | TrueNAS SCALE | Main system storage | On-demand |
 | Not yet defined | mobile-main | Cyberdeck | Not yet defined | Not yet defined | Not yet defined | Main field operation machine | On-demand |
 | N/A | N/A | Flipper 0 | N/A | See Flipper 0 specs | Flipper OS | Field operations data collection | On-demand |
 
