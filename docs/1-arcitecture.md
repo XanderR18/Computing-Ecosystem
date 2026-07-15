@@ -67,7 +67,7 @@ flowchart TD
 ## Machine Role Table
 | IP | Hostname | Physical Device | MAC | Hardware | OS | Role | Power State |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 192.168.0.2 | x-router_ext | WiFi Extender | 10-5A-95-85-87-0A | N/A | N/A | Extends router connection to workspace | 24/7 | 
+| 192.168.0.2 | RE315 | WiFi Extender | 10-5A-95-85-87-0A | N/A | N/A | Extends router connection to workspace | 24/7 | 
 | 192.168.0.6 | lap-main | Laptop | 3C-21-9C-B5-44-15 | AMD 5, 8 GB RAM, 238 GB | Windows 11 | Current primary device | On-demand |
 | 192.168.0.10 | xander-workspace | Workspace Desktop | E0-D5-5E-CF-DC-68 | i7, 16 GB RAM, 238 GB | Windows 11 | Main workspace/ecosystem access point | On-demand |
 | 192.168.0.20 | compute-main | Computing Desktop | 70-54-D2-AB-1B-5D | i5, 8 GB RAM, 250 GB | Windows 11 | Machine to execute workloads | 24/7 |
