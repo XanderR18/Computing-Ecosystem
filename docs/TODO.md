@@ -1,7 +1,7 @@
 ### Ecosystem TO-DO List
 ## General To-Dos
 - [ ] Don't forget agents
-- [ ] Potential docs mix-up between compute and network nodes
+- [X] Potential docs mix-up between compute and network nodes
 - [ ] VPN on network node set up
 - [ ] Monitoring service start
 - [ ] Threads/worker clarification
